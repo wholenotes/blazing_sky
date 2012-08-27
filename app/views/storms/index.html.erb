@@ -1,0 +1,26 @@
+<h1>Listing storms</h1>
+
+<table>
+  <tr>
+    <th>Genus</th>
+    <th>Species</th>
+    <th>Date observed</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @storms.each do |storm| %>
+  <tr>
+    <td><%= storm.name %></td>
+    <td><%= storm.date_observed %></td>
+    <td><%= link_to 'Show', storm %></td>
+    <td><%= link_to 'Edit', edit_storm_path(storm) %></td>
+    <td><%= link_to 'Destroy', storm, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New storm', new_storm_path %>

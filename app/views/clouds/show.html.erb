@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Genus:</b>
+  <%= @cloud.genus %>
+</p>
+
+<p>
+  <b>Species:</b>
+  <%= @cloud.species %>
+</p>
+
+<p>
+  <b>Date observed:</b>
+  <%= @cloud.date_observed %>
+</p>
+
+
+<%= link_to 'Edit', edit_cloud_path(@cloud) %> |
+<%= link_to 'Back', clouds_path %>

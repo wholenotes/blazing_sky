@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @storm.name %>
+</p>
+
+
+<p>
+  <b>Date observed:</b>
+  <%= @storm.date_observed %>
+</p>
+
+
+<%= link_to 'Edit', edit_storm_path(@storm) %> |
+<%= link_to 'Back', storms_path %>
